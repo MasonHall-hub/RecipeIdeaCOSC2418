@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Recipe Idea</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}"/>
 
-  </head>
+<head>
+  <title>Recipe Idea</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
 
-  <body>
-    <nav class="navbar">
-      <div>
-          <a href="{% url 'home' %}" >Home</a>
-          <a href="{% url 'add' %}" >Add a recipe</a>
-          <a href="{% url 'login' %}" >Log In</a>
-          <a href="{% url 'register' %}" >Sign Up</a>
-      </div>
-    </nav>
+</head>
 
+<body>
+  <div class="navbar">
+    <div class="flex-box">
+      <div><a href="{% url 'home' %}">Home</a></div>
+      <div><a href="{% url 'add' %}">Add a recipe</a></div>
+      <div><a href="{% url 'login' %}">Log In</a></div>
+      <div><a href="{% url 'register' %}">Sign Up</a></div>
+    </div>
+  </div>
 
-            {% block content %}
-            {% endblock content %}
+  {% block content %}
+  {% endblock content %}
 
-    <footer>
-              <p>COSC 2418 Final Project by Mason Hall</p>
-    </footer>
+  <footer>
+    <p>COSC 2418 Final Project by Mason Hall</p>
+  </footer>
+</body>
 
-  </body>
 </html>

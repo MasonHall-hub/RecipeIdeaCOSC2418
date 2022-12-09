@@ -1,21 +1,90 @@
-.navbar{
+.navbar {
     border-style: solid;
     border-width: 2px;
-    border-color: blueviolet;
+    border-color: #3398E1;
     margin-bottom: 10px;
     padding: 5px 5px 5px 5px;
+    background-color: royalblue;
 }
 
 body {
     font-family: sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     background-color: #fdfdfd;
 }
 
-.masthead{
-        background:#3398E1;
-        height: auto;
-        padding-bottom: 15px;
-        box-shadow: 0 16px 48px #E3E7EB;
-        padding-top: 10px;
+.masthead {
+    padding: 10px;
+    color: white;
+    background: #3398E1;
+    height: auto;
+    padding-bottom: 15px;
+    box-shadow: 0 16px 48px #E3E7EB;
+    padding-top: 10px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.flex-box a {
+    color: white;
+    font-size: 1.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    border-color: rgb(127, 197, 255);
+    border-radius: 1ex;
+    padding: 4px;
+    background-color: #3398E1;
+}
+.flex-box a:hover{
+    background-color: slateblue;
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 5px;
+}
+
+.card-body {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    ;
+}
+
+.head_text {
+    color: white;
+}
+
+.card {
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+
+.add-recipe{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-button{
+    color: black;
+}
+
+.link-button:active{
+    color: darkcyan;
+}
+
+.link-button:hover{
+    font-weight: bolder;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
 }

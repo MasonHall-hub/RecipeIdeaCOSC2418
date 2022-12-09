@@ -1,19 +1,26 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% block content %}
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
 </head>
 
 <body>
-    <div>
-        <h3>Add a Recipe</h3>
-        <form id='RecipeForm' method="POST" style="margin-top: 1.3em;">
-            {% csrf_token %}
-            {{ recipe_form.as_p }}
-            <button type="submit" class="save btn btn-default">Add</button>
-        </form>
+    <div class="add-recipe">
+        <div>
+            <h3>Add a Recipe</h3>
+        </div>
+        <div>
+            <form id='RecipeForm' method="POST" style="margin-top: 1.3em;">
+                {% csrf_token %}
+                {{ recipe_form.as_p }}
+                <button type="submit" class="save btn btn-default">Add</button>
+            </form>
+        </div>
     </div>
+    <br>
+    <a class="link-button" href="{% url 'home' %}">Home &rarr;</a>
 </body>
 {% endblock content %}
