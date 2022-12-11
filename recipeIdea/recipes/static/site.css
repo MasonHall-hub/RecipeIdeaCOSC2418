@@ -1,6 +1,7 @@
 .navbar {
     border-style: solid;
     border-width: 2px;
+    border-radius: 1rem;
     border-color: #3398E1;
     margin-bottom: 10px;
     padding: 5px 5px 5px 5px;
@@ -27,7 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5px;
+    padding: 5px;   
 }
 
 .flex-box a {
@@ -39,22 +40,27 @@ body {
     border-radius: 1ex;
     padding: 4px;
     background-color: #3398E1;
+    text-decoration: none;
 }
 .flex-box a:hover{
-    background-color: slateblue;
+    background-color: rgba(0, 139, 139, .5);
 }
 
 .content-flex {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding: 5px;
+    
 }
 
 .card-body {
+    border: 2px solid rgba(127, 197, 255, .5);
+    border-radius: .4rem;
     padding-left: 10px;
     padding-bottom: 5px;
-    ;
+}
+.card-body:hover{
+    border: 2px solid rgb(127, 197, 255);
 }
 
 .head_text {
@@ -62,7 +68,17 @@ body {
 }
 
 .card {
+    padding-top: 1vh;
     box-shadow: 0 16px 48px #E3E7EB;
+}
+
+.card-info{
+    font-size: .8em;
+}
+
+.card-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
 }
 
 .add-recipe{
@@ -83,8 +99,42 @@ body {
 }
 
 .comments{
+    border: .5vh outset lightblue;
+    border-radius: 1vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+}
+
+.comments .name{
+    font-weight: bold;
+}
+
+.comments .date{
+    font-weight: normal;
+    font-size: .7em;
+}
+
+.comment-form{
+    padding:  .3vh 1vh 1vh 1vw;
+    margin-right: 1vw;
+}
+
+.comment-form textarea{
+    border: 1px inset;
+    width: 50%;
+    outline: none;
+    resize: none
+}
+
+.comment-form input[type=text]{
+    border: 1px inset;
+    width: 10%;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+}
+
+.comment-form input[type=text]:focus{
+    width: 20%;
 }
