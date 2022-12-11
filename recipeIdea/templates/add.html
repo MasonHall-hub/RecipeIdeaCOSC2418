@@ -1,9 +1,10 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% block content %}
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
 </head>
 
 <body>
@@ -15,5 +16,7 @@
             <button type="submit" class="save btn btn-default">Add</button>
         </form>
     </div>
+    <br>
+    <a class="link-button" href="{% url 'home' %}">Home &rarr;</a>
 </body>
 {% endblock content %}

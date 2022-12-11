@@ -2,14 +2,13 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body">
-        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-        <p class="card-text ">{{ object.content | safe }}</p>
-      </div>
-      <a href="{% url 'comment' post.slug %}" >Leave a comment &rarr;</a>
+    <div class="card-body">
+      <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+      <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+      <p class="card-text ">{{ object.content | safe }}</p>
+      <a class="link-button" href="{% url 'comment' post.slug %}">Leave a comment &rarr;</a>
     </div>
   </div>
 </div>
+
 {% endblock content %}
