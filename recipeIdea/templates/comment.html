@@ -13,9 +13,9 @@
 </p>
 
 <div class="comments">
-    <p class="font-weight-bold">
-        {{ comment.name }}
-        <span class=" text-muted font-weight-normal">
+    <p class="name">
+        {{ comment.name }}<br>
+        <span class="date">
             {{ comment.created_on }}
         </span>
     </p>
@@ -31,7 +31,7 @@
         </div>
         {% else %}
         <h3>Leave a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
+        <form class="comment-form" method="post" style="margin-top: 1.3em;">
             {{ comment_form.as_p }}
             {% csrf_token %}
             <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
