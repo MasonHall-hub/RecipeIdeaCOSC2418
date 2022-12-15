@@ -19,6 +19,10 @@ This is my final project for COSC 2418 at casper college. I am open to alteratio
 - Create login system
 - Expand Recipes pages
 
+## Bug List
+
+- No bugs at the moment, all features implemented are functioning fully
+
 
 ## Installation
 
