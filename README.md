@@ -19,6 +19,11 @@ This is my final project for COSC 2418 at casper college. I am open to alteratio
 - Create login system
 - Expand Recipes pages
 
+## Bug List
+
+- Adding Images to a post returns an error
+- Images do not display
+
 
 ## Installation
 
