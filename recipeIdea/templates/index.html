@@ -26,7 +26,11 @@
         <div class="card-body">
           <h2 class="card-title">{{ post.title }}</h2>
           <p class="card-info">{{ post.author }} | {{ post.created_on}}</p>
-
+          <div class="col-md-5">
+              <div class="ratio ratio-16x9">
+                  <img src="{{ post.image.url }}" class="rounded featured-image-list" alt="{{post.title}}">
+              </div>
+          </div>
           <p class="card-text">{{post.content|slice:":200" }}</p>
           <a class="link-button" href="{% url 'post_detail' post.slug  %}">Read More &rarr;</a>
         </div>

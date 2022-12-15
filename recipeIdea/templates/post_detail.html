@@ -5,6 +5,9 @@
     <div class="card-body">
       <h1 class="card-title">{% block title %} {{ object.title }} {% endblock title %}</h1>
       <p class="card-info">{{ post.author }} | {{ post.created_on }}</p>
+      <div class="ratio ratio-16x9">
+          <img src="{{ post.image.url }}" class="rounded featured-image-list" alt="{{post.title}}">
+      </div>
       <p class="card-text">{{ object.content | safe }}</p>
       <a class="link-button" href="{% url 'comment' post.slug %}">Leave a comment &rarr;</a>
     </div>
