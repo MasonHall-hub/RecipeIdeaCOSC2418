@@ -21,7 +21,7 @@ This is my final project for COSC 2418 at casper college. I am open to alteratio
 
 ## Bug List
 
-- No bugs at the moment, all features implemented are functioning fully
+- The upload an image feature currently doesn't properly save uploaded images nor does it properly displays an image within the webpage correctly.
 
 
 ## Installation
