@@ -180,7 +180,7 @@ body {
 .comment-form button:active {
     background-color: #2774aa;
     transform: translateY(4px);
-  }
+}
 
 .recipe-form button{
     display: inline-block;
@@ -203,4 +203,4 @@ body {
 .recipe-form button:active {
     background-color: #2774aa;
     transform: translateY(4px);
-  }
+}
