@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <nav class="navbar">
     <div class="flex-box">
       <div><a href="{% url 'home' %}">Home</a></div>
       <div><a href="{% url 'add' %}">Add a recipe</a></div>
       <div><a href="{% url 'login' %}">Log In</a></div>
       <div><a href="{% url 'register' %}">Sign Up</a></div>
     </div>
-  </div>
+  </nav>
 
   {% block content %}
   {% endblock content %}

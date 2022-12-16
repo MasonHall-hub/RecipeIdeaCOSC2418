@@ -22,14 +22,16 @@ def Login(request):
     return HttpResponse(template.render())
 
 def add(request):
-    recipe_form = RecipeForm(request.POST or None)
+    
     if request.method == "POST":
+        recipe_form = RecipeForm(request.POST, request.FILES)
         if recipe_form.is_valid():
             recipe = recipe_form.save(commit=False) # saves the recipe
             recipe.save()
             return redirect("home")
     else:
-        return render(request, "add.html", {"recipe_form": recipe_form})
+        recipe_form = RecipeForm()
+    return render(request, "add.html", {"recipe_form": recipe_form})
     
 def comment(request, slug):
     template_name = 'comment.html'
